@@ -225,13 +225,30 @@ body{
 
 ul.nav a:hover{
     border: none;
-    background-color: rgba(255, 255, 255, .3);
+    background-color: rgba(210,17,17, 1);
     border-radius: 12px;
+    animation: animatePulse 2s linear infinite;
+}
+
+@keyframes animatePulse{
+    0%{
+        box-shadow: 0 0 0 0 rgba(210,17,17, .7), 0 0 0 0 rgba(210,17,17, .7);
+    }
+    40%{
+        box-shadow: 0 0 0 10px rgba(255, 12, 124, 0), 0 0 0 0 rgba(210,17,17, .7);
+    }
+    80%{
+        box-shadow: 0 0 0 10px rgba(255, 12, 124, 0), 0 0 0 30px rgba(255, 12, 124,0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(255, 12, 124, 0), 0 0 0 30px rgba(255, 12, 124, 0);
+    }
 }
 
 .footer-nav li{
     padding: 0 .2em;
 }
+
 .footer-nav img{
     width: 40px; height: 40px;
 }
