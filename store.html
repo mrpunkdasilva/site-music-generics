@@ -4,12 +4,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Arquivo CSS -->
+        <!-- link file css -->
         <link rel="stylesheet" href="css/style.css"/>
         <title>The Generics || Store</title>
     </head>
     <body>
+        <!-- header main starts -->
         <header class="main-header">
+            <!-- nav main starts -->
             <nav class="nav main-nav">
                 <ul>
                     <li>
@@ -29,12 +31,18 @@
                     </li>
                 </ul>
             </nav>
+            <!-- nav main ends -->
             <h1 class="band-name band-name-large">The Generics</h1>
         </header>
+        <!-- header main ends -->
 
+        <!-- section store Music starts -->
         <section class="container content-section">
             <h2 class="section-header">Music</h2>
+
+            <!-- shop items starts -->
             <div class="shop-items">
+                <!-- single shop item  -->
                 <div class="shop-item">
                     <span class="shop-item-title">Album 1</span>
                     <img src="images/Album 1.png" alt="Album 1" class="shop-item-image"/>
@@ -43,24 +51,27 @@
                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
+                <!-- single shop item  -->
                 <div class="shop-item">
-                    <span class="shop-item-title">                        Album 2</span>
+                    <span class="shop-item-title">Album 2</span>
                     <img src="images/Album 2.png" alt="Album 2" class="shop-item-image"/>
                     <div class="shop-item-details">
                         <span class="shop-item-price">$12.99</span>
                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
+                <!-- single shop item  -->
                 <div class="shop-item">
-                    <span class="shop-item-title">                        Album 3</span>
+                    <span class="shop-item-title">Album 3</span>
                     <img src="images/Album 3.png" alt="Album 3" class="shop-item-image"/>
                     <div class="shop-item-details">
                         <span class="shop-item-price">$12.99</span>
                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
+                <!-- single shop item  -->
                 <div class="shop-item">
-                    <span class="shop-item-title">                        Album 4</span>
+                    <span class="shop-item-title">Album 4</span>
                     <img src="images/Album 4.png" alt="Album 4" class="shop-item-image"/>
                     <div class="shop-item-details">
                         <span class="shop-item-price">$12.99</span>
@@ -68,10 +79,16 @@
                     </div>
                 </div>
             </div>
+            <!-- shop items ends -->
         </section>
+        <!-- section store Music ends -->
+
+        <!-- section store Merch starts -->        
         <section class="container content-section">
             <h2 class="section-header">Merch</h2>
+            <!-- shop items starts -->        
             <div class="shop-items">
+                <!-- single shop item -->
                 <div class="shop-item">
                     <span class="shop-item-title">T-Shirt</span>
                     <img class="shop-item-image" src="Images/Shirt.png">
@@ -80,6 +97,7 @@
                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
+                <!-- single shop item -->
                 <div class="shop-item">
                     <span class="shop-item-title">Coffee Cup</span>
                     <img class="shop-item-image" src="Images/Cofee.png">
@@ -89,26 +107,40 @@
                     </div>
                 </div>
             </div>
+            <!-- shop items starts -->       
         </section>
+        <!-- section store Merch ends -->                
+
+        <!-- section Cart starts -->
         <section class="container content-section">
             <h2 class="section-header">Cart</h2>
+
+            <!-- cart row starts-->
             <div class="cart-row">
                 <span class="cart-item cart-header cart-column">ITEM</span>
                 <span class="cart-price cart-header cart-column">PRICE</span>
                 <span class="cart-quantity cart-header cart-column">QUANTITY</span>
             </div>
+            <!-- cart row ends-->
+
+            <!-- cart items starts -->
             <div class="cart-items">
+                <!-- single cart row -->
                 <div class="cart-row">
+                    <!-- cart item -->
                     <div class="cart-item cart-column">
                         <img src="images/Shirt.png" alt="Shirt" width="100" height="100">
                         <span class="cart-item-title">T-SHIRT</span>    
                     </div>
+                    <!-- cart price -->
                     <span class="cart-price cart-column">$119.99</span>
+                    <!-- cart quantity -->
                     <div class="cart-quantity cart-column">
                         <input class="cart-quantity-input" type="number" value="1"/>
                         <button class="btn btn-danger" type="reset">Remove</button>
                     </div>
                 </div>
+                <!-- single cart row -->
                 <div class="cart-row">
                     <div class="cart-item cart-column">
                         <img src="images/Album 3.png" alt="Album 3" width="100" height="100">
@@ -121,18 +153,29 @@
                     </div>
                 </div>
             </div>
+            <!-- cart items ends -->
+
+            <!-- cart total starts -->
             <div class="cart-total">
                 <strong class="cart-total-title">Total</strong>
                 <span class="cart-total-price">$39.97</span>
             </div>
+            <!-- cart total ends -->
+
+            <!-- button Purchase starts-->
             <div>
                 <button class="btn btn-primary btn-purchase" type="button">Purchase</button>
             </div>
+            <!-- button Purchase ends-->
         </section>
+        <!-- section Cart ends -->
 
+        <!-- main footer starts -->
         <footer class="main-footer">
+            <!-- main container footer starts -->
             <div class="main-container-footer">
                 <h3 class="band-name band-name-medium">The Generics</h3>
+                <!-- nav footer starts -->
                 <ul class="nav footer-nav">
                     <li>
                         <a href="https://youtube.com" target="_blank">
@@ -150,7 +193,10 @@
                         </a>
                     </li>
                 </ul>
+                <!-- nav footer ends -->
             </div>
+            <!-- main container footer ends -->
         </footer>
+        <!-- main footer starts -->
     </body>
 </html>
