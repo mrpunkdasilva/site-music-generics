@@ -14,6 +14,25 @@
 
 
 /*
+================
+   Scroll Bar
+================
+*/
+html::-webkit-scrollbar{
+    width: .7rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #201C51;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #D21111;
+    border-radius: 6px;
+}
+
+
+/*
 ==================
     Globals
 ==================
@@ -190,7 +209,7 @@ body{
 ==============
 */
 .main-footer{
-    background-color: #201C51 /*#56CCF2*/;   
+    background-color: #201C51;   
     color: #fff;
     padding: .25em 0;
     margin-top: 4em;
