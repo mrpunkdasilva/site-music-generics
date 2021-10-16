@@ -1,12 +1,23 @@
+/*
+================
+    Fonts
+================
+*/
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
 @import url("https://fonts.googleapis.com/css?family=Metal+Mania");
 
 
 @font-face{
     font-family: "Booter - Zero Zero";
-    src: url("../Fonts/Booter - Zero Zero.woff") format("woff"), url("../Fonts/Booter - Zero Zero.woff2") format("woff2");
+    src: url("../fonts/Booter - Zero Zero.woff") format("woff"), url("../fonts/Booter - Zero Zero.woff2") format("woff2");
 }
 
+
+/*
+==================
+    Globals
+==================
+*/
 *{
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
@@ -18,32 +29,78 @@ html, body{
     padding: 0;
 }
 
+body{
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2.5em;
+}
+
+.btn{
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em;
+    cursor: pointer;
+}
+
+.btn-header{
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 3px;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover{
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play{
+    display: block;
+    margin: 0 auto;
+    color: #2D9CDB;
+    font-size: 4em;
+    padding: 0;
+    width: 100px; height: 100px;
+    border-radius: 50%;
+}
+
 .main-header{
-    background-image: url("../images/Header Background.jpg");
+    background-image: url("../img/Header Background.jpg");
     background-size: cover;
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, .3);
     padding-bottom: 30px;
 }
 
-.nav ul{
-    margin: 0;
+.content-section{
+    margin: 0 auto;
 }
-.nav li{
-    display: inline;
+
+.section-header{
+    font-family: "Metal Mania";
+    font-size: 3.6em;
+    font-weight: normal;
+    color: #1B2E8E;
+    text-align: center;
 }
-.nav a{
-    display: inline-block;
-    padding: .5em;
-    color: white;
-    text-decoration: none;
-}
-.nav a:hover{
-    background-color: rgba(255, 255, 255, .3);
-    border-bottom: 2px solid #000;
-    transition: background-color 1s;
-}
-    
+
+
+/*
+================
+  Main Nav
+================
+*/    
 .main-nav{
     text-transform: uppercase;
     text-align: center;
@@ -51,8 +108,30 @@ html, body{
     font-weight: lighter;
     border-bottom: 1px solid rgba(255, 255, 255, .5)
 }
+
 .main-nav li{
     padding: 0 5.8%;
+}
+
+.nav ul{
+    margin: 0;
+}
+
+.nav li{
+    display: inline;
+}
+
+.nav a{
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    background-color: rgba(255, 255, 255, .3);
+    border-bottom: 2px solid #000;
+    transition: background-color 1s;
 }
 
 @media screen and (max-width: 560px){
@@ -61,6 +140,12 @@ html, body{
     }
 }
 
+
+/*
+==============
+  Band Name
+==============
+*/
 .band-name{
     text-align: center;
     margin: 0;
@@ -74,23 +159,18 @@ html, body{
     font-size: 8em;
 }
 
-.content-section{
-    margin: 1em;
+.band-name-medium{
+    font-size: 4em;
+    color: #f3f3f3;
+    margin-left: .2em;
 }
 
-.container{
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 1.5em;
-}
-.section-header{
-    font-family: "Metal Mania";
-    font-size: 3.6em;
-    font-weight: normal;
-    color: #1B2E8E;
-    text-align: center;
-}
 
+/*
+============
+  About
+============
+*/
 .about-content{
     text-align: justify;
 }
@@ -103,6 +183,12 @@ html, body{
     border-radius: 50%;
 }
 
+
+/*
+==============
+  Main footer
+==============
+*/
 .main-footer{
     background-color: #201C51 /*#56CCF2*/;   
     color: #fff;
@@ -110,11 +196,6 @@ html, body{
     margin-top: 4em;
 }
 
-.band-name-medium{
-    font-size: 4em;
-    color: #f3f3f3;
-    margin-left: .2em;
-}
 
 .main-container-footer{
     display: flex;
@@ -136,41 +217,18 @@ ul.nav a:hover{
     width: 40px; height: 40px;
 }
 
-.btn{
-    text-align: center;
-    vertical-align: middle;
-    padding: .67em;
-    cursor: pointer;
-}
 
-.btn-header{
-    margin: .5em 15% 2em 15%;
-    color: white;
-    border: 2px solid #2D9CDB;
-    background-color: rgba(255, 255, 255, .1);
-    border-radius: 3px;
-    font-size: 1.5em;
-    font-weight: lighter;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-.btn-header:hover{
-    background-color: rgba(255, 255, 255, .3);
-}
-
-.btn-play{
-    display: block;
-    margin: 0 auto;
-    color: #2D9CDB;
-    font-size: 4em;
-    padding: 0;
-    width: 100px; height: 100px;
-    border-radius: 50%;
-}
-
+/*
+================
+  Section Tour
+================
+*/
 .section-tour{
+    min-width: 100%;
+    margin: 0 auto;
     padding-top: 2.6em; 
     padding-bottom: 3.3em;
+    text-align: center;
 }
 
 .tour-container{
@@ -222,6 +280,18 @@ ul.nav a:hover{
     box-shadow: -3px 3px 1px #333;
 }
 
+
+/*
+================
+  Shop Items
+================
+*/
+.shop-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .shop-item{
     margin: 30px;
 }
@@ -259,12 +329,12 @@ ul.nav a:hover{
     box-shadow: none;
 }
 
-.shop-items{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 
+/*
+================
+  Section Cart
+================
+*/
 .cart-header{
     font-weight: bold;
     font-size: 1.25em;
