@@ -149,8 +149,8 @@ function initProductQuickView() {
   productCards.forEach(card => {
     const quickViewBtn = document.createElement('button');
     quickViewBtn.className = 'quick-view-btn';
-    quickViewBtn.textContent = 'Visualização Rápida';
-    quickViewBtn.setAttribute('aria-label', 'Visualização rápida do produto');
+    quickViewBtn.textContent = 'Quick View';
+    quickViewBtn.setAttribute('aria-label', 'Quick view of the product');
     
     card.appendChild(quickViewBtn);
     
@@ -161,7 +161,7 @@ function initProductQuickView() {
       const title = card.querySelector('.product-title').textContent;
       const price = card.querySelector('.product-price').textContent;
       const image = card.querySelector('.product-image').src;
-      const description = card.dataset.description || 'Descrição não disponível';
+      const description = card.dataset.description || 'Description not available';
       
       showQuickView(title, price, image, description);
     });
@@ -182,7 +182,7 @@ function showQuickView(title, price, image, description) {
     
     modal.innerHTML = `
       <div class="quick-view-content">
-        <button class="quick-view-close" aria-label="Fechar visualização rápida">&times;</button>
+        <button class="quick-view-close" aria-label="Close quick view">&times;</button>
         <div class="quick-view-image">
           <img src="" alt="">
         </div>
@@ -190,7 +190,7 @@ function showQuickView(title, price, image, description) {
           <h3 class="quick-view-title"></h3>
           <p class="quick-view-price"></p>
           <p class="quick-view-description"></p>
-          <button class="btn btn-primary add-to-cart-btn">Adicionar ao Carrinho</button>
+          <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
         </div>
       </div>
     `;

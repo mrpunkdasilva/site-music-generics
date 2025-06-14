@@ -34,6 +34,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/modern-style.css">
     <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/ticket-buttons.css">
+    <link rel="stylesheet" href="css/notifications.css">
+    <link rel="stylesheet" href="css/custom.css">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
@@ -81,8 +84,8 @@
         <section class="section store-hero">
             <div class="container">
                 <div class="section-header">
-                    <h1 class="section-title">Loja Oficial</h1>
-                    <p class="section-subtitle">Adquira nossos álbuns e produtos exclusivos</p>
+                    <h1 class="section-title">Official Store</h1>
+                    <p class="section-subtitle">Get our albums and exclusive products</p>
                 </div>
             </div>
         </section>
@@ -91,80 +94,80 @@
         <section class="section store-section">
             <div class="container">
                 <div class="store-categories">
-                    <button class="category-btn active" data-category="all">Todos</button>
-                    <button class="category-btn" data-category="music">Música</button>
-                    <button class="category-btn" data-category="merch">Produtos</button>
+                    <button class="category-btn active" data-category="all">All</button>
+                    <button class="category-btn" data-category="music">Music</button>
+                    <button class="category-btn" data-category="merch">Merchandise</button>
                 </div>
                 
                 <div class="products-grid">
                     <!-- Album 1 -->
-                    <div class="product-card" data-category="music">
-                        <img src="img/Album 1.png" alt="Capa do Album 1" class="product-image">
+                    <div class="product-card" data-category="music" data-description="Our debut album featuring 10 original tracks that established our sound in the rock scene. Released in 2016.">
+                        <img src="img/Album 1.png" alt="Album 1 Cover" class="product-image" loading="lazy">
                         <div class="product-info">
                             <h3 class="product-title">Album 1</h3>
                             <p class="product-price">$12.99</p>
                             <div class="product-actions">
-                                <button class="btn btn-primary add-to-cart-btn" aria-label="Adicionar Album 1 ao carrinho">Adicionar ao Carrinho</button>
+                                <button class="btn btn-primary add-to-cart-btn" aria-label="Add Album 1 to cart">Add to Cart</button>
                             </div>
                         </div>
                     </div>
                     
                     <!-- Album 2 -->
-                    <div class="product-card" data-category="music">
-                        <img src="img/Album 2.png" alt="Capa do Album 2" class="product-image">
+                    <div class="product-card" data-category="music" data-description="Our sophomore album with a more experimental sound. Features 12 tracks including our hit single 'Electric Dreams'. Released in 2018.">
+                        <img src="img/Album 2.png" alt="Album 2 Cover" class="product-image" loading="lazy">
                         <div class="product-info">
                             <h3 class="product-title">Album 2</h3>
                             <p class="product-price">$12.99</p>
                             <div class="product-actions">
-                                <button class="btn btn-primary add-to-cart-btn" aria-label="Adicionar Album 2 ao carrinho">Adicionar ao Carrinho</button>
+                                <button class="btn btn-primary add-to-cart-btn" aria-label="Add Album 2 to cart">Add to Cart</button>
                             </div>
                         </div>
                     </div>
                     
                     <!-- Album 3 -->
-                    <div class="product-card" data-category="music">
-                        <img src="img/Album 3.png" alt="Capa do Album 3" class="product-image">
+                    <div class="product-card" data-category="music" data-description="Our critically acclaimed third album that put us on the international map. Features 14 tracks including collaborations with other famous artists. Released in 2020.">
+                        <img src="img/Album 3.png" alt="Album 3 Cover" class="product-image" loading="lazy">
                         <div class="product-info">
                             <h3 class="product-title">Album 3</h3>
                             <p class="product-price">$12.99</p>
                             <div class="product-actions">
-                                <button class="btn btn-primary add-to-cart-btn" aria-label="Adicionar Album 3 ao carrinho">Adicionar ao Carrinho</button>
+                                <button class="btn btn-primary add-to-cart-btn" aria-label="Add Album 3 to cart">Add to Cart</button>
                             </div>
                         </div>
                     </div>
                     
                     <!-- Album 4 -->
-                    <div class="product-card" data-category="music">
-                        <img src="img/Album 4.png" alt="Capa do Album 4" class="product-image">
+                    <div class="product-card" data-category="music" data-description="Our latest album representing the evolution of our sound. Features 15 tracks including our newest hit 'Infinite Horizons'. Released in 2022.">
+                        <img src="img/Album 4.png" alt="Album 4 Cover" class="product-image" loading="lazy">
                         <div class="product-info">
                             <h3 class="product-title">Album 4</h3>
                             <p class="product-price">$12.99</p>
                             <div class="product-actions">
-                                <button class="btn btn-primary add-to-cart-btn" aria-label="Adicionar Album 4 ao carrinho">Adicionar ao Carrinho</button>
+                                <button class="btn btn-primary add-to-cart-btn" aria-label="Add Album 4 to cart">Add to Cart</button>
                             </div>
                         </div>
                     </div>
                     
                     <!-- T-Shirt -->
                     <div class="product-card" data-category="merch">
-                        <img src="img/Shirt.png" alt="Camiseta da banda" class="product-image">
+                        <img src="img/Shirt.png" alt="Band T-Shirt" class="product-image" loading="lazy">
                         <div class="product-info">
-                            <h3 class="product-title">Camiseta</h3>
+                            <h3 class="product-title">T-Shirt</h3>
                             <p class="product-price">$19.99</p>
                             <div class="product-actions">
-                                <button class="btn btn-primary add-to-cart-btn" aria-label="Adicionar Camiseta ao carrinho">Adicionar ao Carrinho</button>
+                                <button class="btn btn-primary add-to-cart-btn" aria-label="Add T-Shirt to cart">Add to Cart</button>
                             </div>
                         </div>
                     </div>
                     
                     <!-- Coffee Cup -->
                     <div class="product-card" data-category="merch">
-                        <img src="img/Cofee.png" alt="Caneca da banda" class="product-image">
+                        <img src="img/Cofee.png" alt="Band Coffee Mug" class="product-image" loading="lazy">
                         <div class="product-info">
-                            <h3 class="product-title">Caneca</h3>
+                            <h3 class="product-title">Coffee Mug</h3>
                             <p class="product-price">$6.99</p>
                             <div class="product-actions">
-                                <button class="btn btn-primary add-to-cart-btn" aria-label="Adicionar Caneca ao carrinho">Adicionar ao Carrinho</button>
+                                <button class="btn btn-primary add-to-cart-btn" aria-label="Add Coffee Mug to cart">Add to Cart</button>
                             </div>
                         </div>
                     </div>
@@ -176,19 +179,19 @@
         <section class="section cart-section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Seu Carrinho</h2>
+                    <h2 class="section-title">Your Cart</h2>
                 </div>
                 
                 <table class="cart-table">
                     <thead>
                         <tr>
-                            <th>Produto</th>
-                            <th>Preço</th>
-                            <th>Quantidade</th>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
                         </tr>
                     </thead>
                     <tbody class="cart-items">
-                        <!-- Os itens do carrinho serão adicionados dinamicamente via JavaScript -->
+                        <!-- Cart items will be added dynamically via JavaScript -->
                     </tbody>
                     <tfoot>
                         <tr class="cart-total">
@@ -199,7 +202,7 @@
                 </table>
                 
                 <div class="purchase-container">
-                    <button class="btn btn-secondary btn-lg btn-purchase" aria-label="Finalizar compra">Finalizar Compra</button>
+                    <button class="btn btn-secondary btn-lg btn-purchase" aria-label="Checkout">Checkout</button>
                 </div>
             </div>
         </section>
@@ -211,41 +214,42 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <h3 class="footer-logo">The Generics</h3>
-                    <p class="footer-text">A melhor banda de rock da atualidade, com shows em todo o mundo e álbuns aclamados pela crítica.</p>
+                    <p class="footer-text">The best rock band of our time, with shows around the world and critically acclaimed albums.</p>
                     <div class="social-links">
-                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visite nosso canal no YouTube">
-                            <img src="img/Youtube Logo.png" alt="YouTube Logo">
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visit our YouTube channel">
+                            <img src="img/Youtube Logo.png" alt="YouTube Logo" loading="lazy">
                         </a>
-                        <a href="https://spotify.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Ouça nossas músicas no Spotify">
-                            <img src="img/Spotify Logo.png" alt="Spotify Logo">
+                        <a href="https://spotify.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Listen to our music on Spotify">
+                            <img src="img/Spotify Logo.png" alt="Spotify Logo" loading="lazy">
                         </a>
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Siga-nos no Facebook">
-                            <img src="img/Facebook Logo.png" alt="Facebook Logo">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow us on Facebook">
+                            <img src="img/Facebook Logo.png" alt="Facebook Logo" loading="lazy">
                         </a>
                     </div>
                 </div>
                 
                 <div class="footer-nav">
-                    <h4 class="footer-heading">Links Rápidos</h4>
+                    <h4 class="footer-heading">Quick Links</h4>
                     <ul class="footer-links">
                         <li class="footer-link"><a href="index.html">Home</a></li>
-                        <li class="footer-link"><a href="store.html">Loja</a></li>
-                        <li class="footer-link"><a href="about.html">Sobre</a></li>
+                        <li class="footer-link"><a href="store.html">Store</a></li>
+                        <li class="footer-link"><a href="about.html">About</a></li>
+                        <li class="footer-link"><a href="gallery.html">Gallery</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-contact">
-                    <h4 class="footer-heading">Contato</h4>
+                    <h4 class="footer-heading">Contact</h4>
                     <ul class="footer-links">
                         <li class="footer-link">Email: info@thegenerics.com</li>
-                        <li class="footer-link">Telefone: (11) 1234-5678</li>
-                        <li class="footer-link">Endereço: Av. Paulista, 1000 - São Paulo, SP</li>
+                        <li class="footer-link">Phone: +1 (555) 243-4678</li>
+                        <li class="footer-link">Address: 123 Music Ave, New York, NY</li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p class="copyright">&copy; 2023 The Generics. Todos os direitos reservados. Desenvolvido por Gustavo Henrique</p>
+                <p class="copyright">&copy; 2023 The Generics. All rights reserved. Developed by Gustavo Henrique</p>
             </div>
         </div>
     </footer>

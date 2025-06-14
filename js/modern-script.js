@@ -125,7 +125,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const cartItemNames = document.querySelectorAll('.cart-item-title');
         for (let i = 0; i < cartItemNames.length; i++) {
             if (cartItemNames[i].innerText === title) {
-                alert('This item is already in your cart!');
+                // Show notification instead of alert
+                showNotification('This item is already in your cart!', 'warning');
                 return;
             }
         }
@@ -168,7 +169,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function purchaseClicked() {
-        alert('Thank you for your purchase!');
+        // Show notification instead of alert
+        showNotification('Thank you for your purchase!', 'success');
         
         // Clear cart
         while (cartItems.hasChildNodes()) {
@@ -176,6 +178,44 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         updateCartTotal();
+    }
+    
+    // Notification function
+    function showNotification(message, type = 'info') {
+        // Create notification element
+        const notification = document.createElement('div');
+        notification.className = `notification ${type}`;
+        notification.innerHTML = `
+            <div class="notification-content">
+                <p>${message}</p>
+                <button class="notification-close" aria-label="Close notification">&times;</button>
+            </div>
+        `;
+        
+        // Add to DOM
+        document.body.appendChild(notification);
+        
+        // Add visible class after a small delay (for animation)
+        setTimeout(() => {
+            notification.classList.add('visible');
+        }, 10);
+        
+        // Add close button functionality
+        const closeButton = notification.querySelector('.notification-close');
+        closeButton.addEventListener('click', () => {
+            notification.classList.remove('visible');
+            setTimeout(() => {
+                notification.remove();
+            }, 300); // Match transition time
+        });
+        
+        // Auto-remove after 5 seconds
+        setTimeout(() => {
+            notification.classList.remove('visible');
+            setTimeout(() => {
+                notification.remove();
+            }, 300); // Match transition time
+        }, 5000);
     }
 
     // Scroll animations

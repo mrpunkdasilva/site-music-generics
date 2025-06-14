@@ -1,0 +1,50 @@
+/**
+ * Custom CSS Overrides
+ * This file contains custom styles that override the default theme
+ */
+
+/* Tabela de shows com cor mais clara */
+.tour-table thead {
+    background-color: #4a5bff !important; /* Azul mais claro */
+}
+
+/* Título do footer mais claro */
+.footer-logo {
+    color: #ffffff !important;
+    font-weight: 700;
+}
+
+/* Ajuste das imagens da galeria no index */
+.gallery-preview-items {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.gallery-preview-item {
+    flex: 1;
+    min-width: 200px;
+    max-width: calc(33.333% - 10px);
+}
+
+.gallery-preview-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Ajuste para mobile */
+@media (max-width: 768px) {
+    .gallery-preview-items {
+        flex-direction: column !important;
+    }
+    
+    .gallery-preview-item {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+}

@@ -75,9 +75,9 @@ function showInstallButton() {
   installButton.className = 'pwa-install-button';
   installButton.innerHTML = `
     <span class="install-icon">📱</span>
-    <span class="install-text">Instalar App</span>
+    <span class="install-text">Install App</span>
   `;
-  installButton.setAttribute('aria-label', 'Instalar como aplicativo');
+  installButton.setAttribute('aria-label', 'Install as application');
   
   // Add event listener to trigger installation
   installButton.addEventListener('click', triggerInstallPrompt);
@@ -141,9 +141,9 @@ function createNotificationButton() {
     notifyButton.className = 'notification-button';
     notifyButton.innerHTML = `
       <span class="notify-icon">🔔</span>
-      <span class="notify-text">Ativar Notificações</span>
+      <span class="notify-text">Enable Notifications</span>
     `;
-    notifyButton.setAttribute('aria-label', 'Ativar notificações de novidades');
+    notifyButton.setAttribute('aria-label', 'Enable notifications for updates');
     
     // Add event listener
     notifyButton.addEventListener('click', requestNotificationPermission);
@@ -217,7 +217,7 @@ function showNotificationSuccess() {
   // Create a toast notification
   const toast = document.createElement('div');
   toast.className = 'toast-notification';
-  toast.textContent = 'Notificações ativadas com sucesso!';
+  toast.textContent = 'Notifications enabled successfully!';
   
   // Add to the DOM
   document.body.appendChild(toast);

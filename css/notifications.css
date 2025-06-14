@@ -1,0 +1,190 @@
+/**
+ * Notification Styles
+ * This file contains styles for the notification system
+ */
+
+/* Notification Button Styles */
+.notification-button {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-primary, #e91e63);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.notification-button:hover, 
+.notification-button:focus {
+    background-color: var(--color-primary-dark, #c2185b);
+}
+
+.notify-icon {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.dark-theme .notification-button {
+    background-color: var(--color-primary, #ff4081);
+}
+
+.dark-theme .notification-button:hover,
+.dark-theme .notification-button:focus {
+    background-color: var(--color-primary-dark, #f50057);
+}
+
+.high-contrast .notification-button {
+    background-color: var(--color-primary, #ff6600);
+    border: 2px solid white;
+}
+
+.high-contrast.light-contrast .notification-button {
+    background-color: var(--color-primary, #cc5200);
+    color: white;
+    border: 2px solid black;
+}
+
+/* Toast Notification Styles */
+.toast-notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-success, #4caf50);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.toast-notification.hide {
+    opacity: 0;
+}
+
+/* Notification Popup Styles */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    max-width: 350px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 9999;
+    transform: translateX(120%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.notification.visible {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.notification-content {
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.notification p {
+    margin: 0;
+    padding-right: 15px;
+    font-size: 14px;
+}
+
+.notification-close {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #666;
+    padding: 0;
+    line-height: 1;
+}
+
+.notification-close:hover {
+    color: #333;
+}
+
+/* Notification types */
+.notification.info {
+    border-left: 4px solid #2196f3;
+}
+
+.notification.success {
+    border-left: 4px solid #4caf50;
+}
+
+.notification.warning {
+    border-left: 4px solid #ff9800;
+}
+
+.notification.error {
+    border-left: 4px solid #f44336;
+}
+
+/* Dark theme adjustments */
+.dark-theme .notification {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-theme .notification-close {
+    color: #ccc;
+}
+
+.dark-theme .notification-close:hover {
+    color: #fff;
+}
+
+/* High contrast mode */
+.high-contrast .notification {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.high-contrast .notification.info {
+    border-left: 4px solid #00ccff;
+}
+
+.high-contrast .notification.success {
+    border-left: 4px solid #00cc00;
+}
+
+.high-contrast .notification.warning {
+    border-left: 4px solid #ffcc00;
+}
+
+.high-contrast .notification.error {
+    border-left: 4px solid #ff0000;
+}
+
+.high-contrast .notification-close {
+    color: #fff;
+}
+
+/* Light high contrast mode */
+.high-contrast.light-contrast .notification {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+/* Mobile adjustments */
+@media (max-width: 576px) {
+    .notification {
+        left: 20px;
+        right: 20px;
+        max-width: none;
+    }
+}
