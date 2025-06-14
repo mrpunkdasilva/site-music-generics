@@ -1,0 +1,117 @@
+{
+  "name": "The Generics - Banda de Rock",
+  "short_name": "The Generics",
+  "description": "Site oficial da banda The Generics com agenda de shows, informações e loja virtual",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#e91e63",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "img/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icons/maskable-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "img/screenshots/home-screen.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "platform": "wide",
+      "label": "Página inicial do The Generics"
+    },
+    {
+      "src": "img/screenshots/store-screen.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "platform": "wide",
+      "label": "Loja virtual do The Generics"
+    },
+    {
+      "src": "img/screenshots/gallery-screen.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "platform": "wide",
+      "label": "Galeria de mídia do The Generics"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Agenda de Shows",
+      "short_name": "Shows",
+      "description": "Ver a agenda de shows da banda",
+      "url": "/index.html#tours",
+      "icons": [{ "src": "img/icons/icon-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Loja Virtual",
+      "short_name": "Loja",
+      "description": "Acessar a loja virtual da banda",
+      "url": "/store.html",
+      "icons": [{ "src": "img/icons/icon-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Galeria",
+      "short_name": "Galeria",
+      "description": "Ver fotos e vídeos da banda",
+      "url": "/gallery.html",
+      "icons": [{ "src": "img/icons/icon-96x96.png", "sizes": "96x96" }]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "categories": ["music", "entertainment", "shopping"],
+  "lang": "pt-BR",
+  "dir": "ltr"
+}

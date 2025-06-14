@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Generics - Photo and video gallery of the band">
+    <meta name="keywords" content="band, music, rock, shows, photos, videos, gallery, the generics">
+    <meta name="author" content="Gustavo Henrique">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thegenerics.com/gallery.html">
+    <meta property="og:title" content="The Generics - Gallery">
+    <meta property="og:description" content="Check out photos and videos from The Generics band shows and backstage">
+    <meta property="og:image" content="img/gallery-preview-1.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://thegenerics.com/gallery.html">
+    <meta property="twitter:title" content="The Generics - Gallery">
+    <meta property="twitter:description" content="Check out photos and videos from The Generics band shows and backstage">
+    <meta property="twitter:image" content="img/gallery-preview-1.jpg">
+    
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#e91e63">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="The Generics">
+    <link rel="apple-touch-icon" href="img/icons/icon-152x152.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="alternate icon" type="image/png" href="img/favicon.png">
+    
+    <title>The Generics - Photo and Video Gallery</title>
+</head>
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">The Generics</a>
+            </div>
+            
+            <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Navigation menu">
+                ☰
+            </button>
+            
+            <nav class="main-nav" id="main-nav" role="navigation" aria-label="Main menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="store.html" class="nav-link">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link" aria-current="page">Gallery</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Gallery Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Gallery</h1>
+                <p class="page-description">Check out photos and videos from our shows, albums, and special moments</p>
+            </div>
+        </section>
+        
+        <!-- Gallery Section -->
+        <section class="section gallery-section">
+            <div class="container">
+                <div class="gallery-container">
+                    <!-- Gallery Filter -->
+                    <div class="gallery-filter" role="tablist" aria-label="Gallery filter">
+                        <button class="gallery-filter-btn active" data-filter="all" role="tab" aria-selected="true" aria-controls="gallery-grid">
+                            All
+                        </button>
+                        <button class="gallery-filter-btn" data-filter="shows" role="tab" aria-selected="false" aria-controls="gallery-grid">
+                            Shows
+                        </button>
+                        <button class="gallery-filter-btn" data-filter="backstage" role="tab" aria-selected="false" aria-controls="gallery-grid">
+                            Albums
+                        </button>
+                        <button class="gallery-filter-btn" data-filter="video-item" role="tab" aria-selected="false" aria-controls="gallery-grid">
+                            Videos
+                        </button>
+                    </div>
+                    
+                    <!-- Gallery Grid -->
+                    <div id="gallery-grid" class="gallery-grid" role="tabpanel">
+                        <!-- Shows -->
+                        <div class="gallery-item shows" tabindex="0">
+                            <img src="img/Header Background.jpg" alt="Show ao vivo em Toronto" loading="lazy" data-full-src="img/Header Background.jpg">
+                            <div class="gallery-caption">Live show in Toronto, Canada (2023)</div>
+                        </div>
+                        
+                        <div class="gallery-item shows" tabindex="0">
+                            <img src="img/Band Members.png" alt="The band performing at a rock festival" loading="lazy" data-full-src="img/Band Members.png">
+                            <div class="gallery-caption">Rock Festival in Las Vegas (2022)</div>
+                        </div>
+                        
+                        <!-- Albums -->
+                        <div class="gallery-item backstage" tabindex="0">
+                            <img src="img/Album 1.png" alt="Album cover - First album" loading="lazy" data-full-src="img/Album 1.png">
+                            <div class="gallery-caption">Our first album (2020)</div>
+                        </div>
+                        
+                        <div class="gallery-item backstage" tabindex="0">
+                            <img src="img/Album 2.png" alt="Album cover - Second album" loading="lazy" data-full-src="img/Album 2.png">
+                            <div class="gallery-caption">Our second album (2021)</div>
+                        </div>
+                        
+                        <div class="gallery-item backstage" tabindex="0">
+                            <img src="img/Album 3.png" alt="Album cover - Third album" loading="lazy" data-full-src="img/Album 3.png">
+                            <div class="gallery-caption">Our third album (2022)</div>
+                        </div>
+                        
+                        <div class="gallery-item backstage" tabindex="0">
+                            <img src="img/Album 4.png" alt="Album cover - Fourth album" loading="lazy" data-full-src="img/Album 4.png">
+                            <div class="gallery-caption">Our latest album (2023)</div>
+                        </div>
+                        
+                        <!-- Merchandise -->
+                        <div class="gallery-item backstage" tabindex="0">
+                            <img src="img/Shirt.png" alt="Band t-shirt merchandise" loading="lazy" data-full-src="img/Shirt.png">
+                            <div class="gallery-caption">Official band merchandise - T-shirt</div>
+                        </div>
+                        
+                        <div class="gallery-item backstage" tabindex="0">
+                            <img src="img/Cofee.png" alt="Band coffee mug merchandise" loading="lazy" data-full-src="img/Cofee.png">
+                            <div class="gallery-caption">Official band merchandise - Coffee mug</div>
+                        </div>
+                        
+                        <!-- Videos -->
+                        <div class="gallery-item video-item" tabindex="0" data-video-src="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                            <img src="img/Youtube Logo.png" alt="Music video for our latest single" loading="lazy">
+                            <div class="gallery-caption">Music video for our latest single (2023)</div>
+                        </div>
+                        
+                        <div class="gallery-item video-item" tabindex="0" data-video-src="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                            <img src="img/Spotify Logo.png" alt="Exclusive interview with the band" loading="lazy">
+                            <div class="gallery-caption">Exclusive interview with the band (2023)</div>
+                        </div>
+                        
+                        <div class="gallery-item video-item" tabindex="0" data-video-src="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                            <img src="img/Facebook Logo.png" alt="Behind the scenes of album recording" loading="lazy">
+                            <div class="gallery-caption">Behind the scenes of album recording (2022)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">The Generics</h3>
+                    <p class="footer-text">The best rock band today, with shows around the world and critically acclaimed albums.</p>
+                    <div class="social-links">
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visit our YouTube channel">
+                            <img src="img/Youtube Logo.png" alt="YouTube Logo" loading="lazy">
+                        </a>
+                        <a href="https://spotify.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Listen to our music on Spotify">
+                            <img src="img/Spotify Logo.png" alt="Spotify Logo" loading="lazy">
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow us on Facebook">
+                            <img src="img/Facebook Logo.png" alt="Facebook Logo" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="index.html">Home</a></li>
+                        <li class="footer-link"><a href="store.html">Store</a></li>
+                        <li class="footer-link"><a href="about.html">About</a></li>
+                        <li class="footer-link"><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link">Email: info@thegenerics.com</li>
+                        <li class="footer-link">Phone: (555) 123-4567</li>
+                        <li class="footer-link">Address: 123 Music Ave, New York, NY</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2023 The Generics. All rights reserved. Developed by Gustavo Henrique</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/modern-script.js"></script>
+    <script type="module" src="js/app.js"></script>
+    <script>
+        // Register service worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/js/service-worker.js')
+                    .then(registration => {
+                        console.log('Service Worker registered with scope:', registration.scope);
+                    })
+                    .catch(error => {
+                        console.error('Service Worker registration failed:', error);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>

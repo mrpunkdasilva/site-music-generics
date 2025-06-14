@@ -1,40 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Generics - Banda de rock com agenda de shows, informações e loja virtual">
-    <meta name="keywords" content="banda, música, rock, shows, álbuns, the generics">
+    <meta name="description" content="The Generics - Rock band with tour schedule, information and online store">
+    <meta name="keywords" content="band, music, rock, shows, albums, the generics">
     <meta name="author" content="Gustavo Henrique">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://thegenerics.com/">
-    <meta property="og:title" content="The Generics - Banda de Rock">
-    <meta property="og:description" content="Conheça The Generics, agenda de shows, informações e loja virtual">
+    <meta property="og:title" content="The Generics - Rock Band">
+    <meta property="og:description" content="Discover The Generics, tour schedule, information and online store">
     <meta property="og:image" content="img/Band Members.png">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://thegenerics.com/">
-    <meta property="twitter:title" content="The Generics - Banda de Rock">
-    <meta property="twitter:description" content="Conheça The Generics, agenda de shows, informações e loja virtual">
+    <meta property="twitter:title" content="The Generics - Rock Band">
+    <meta property="twitter:description" content="Discover The Generics, tour schedule, information and online store">
     <meta property="twitter:image" content="img/Band Members.png">
+    
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#e91e63">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="The Generics">
+    <link rel="apple-touch-icon" href="img/icons/icon-152x152.png">
     
     <!-- CSS -->
     <link rel="stylesheet" href="css/modern-style.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/gallery.css">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
     <link rel="alternate icon" type="image/png" href="img/favicon.png">
     
-    <title>The Generics - Banda de Rock | Página Inicial</title>
+    <title>The Generics - Rock Band | Home Page</title>
 </head>
 <body>
     <!-- Skip to main content link for accessibility -->
-    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     
     <!-- Header -->
     <header class="main-header">
@@ -43,20 +53,23 @@
                 <a href="index.html">The Generics</a>
             </div>
             
-            <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Menu de navegação">
+            <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Navigation menu">
                 ☰
             </button>
             
-            <nav class="main-nav" id="main-nav" role="navigation" aria-label="Menu principal">
+            <nav class="main-nav" id="main-nav" role="navigation" aria-label="Main menu">
                 <ul class="nav-list">
                     <li class="nav-item">
                         <a href="index.html" class="nav-link" aria-current="page">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="store.html" class="nav-link">Loja</a>
+                        <a href="store.html" class="nav-link">Store</a>
                     </li>
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link">Sobre</a>
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
                     </li>
                 </ul>
             </nav>
@@ -67,10 +80,10 @@
     <section class="hero">
         <div class="container hero-content">
             <h1 class="band-name">The Generics</h1>
-            <p class="hero-subtitle">A melhor banda de rock da atualidade</p>
+            <p class="hero-subtitle">The best rock band of our time</p>
             <div class="hero-buttons">
-                <a href="#tours" class="btn btn-primary btn-lg">Ver Agenda de Shows</a>
-                <a href="store.html" class="btn btn-outline btn-lg">Visitar Loja</a>
+                <a href="#tours" class="btn btn-primary btn-lg">View Tour Schedule</a>
+                <a href="store.html" class="btn btn-outline btn-lg">Visit Store</a>
             </div>
         </div>
     </section>
@@ -81,77 +94,77 @@
         <section id="tours" class="section tours-section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Agenda de Shows</h2>
+                    <h2 class="section-title">Tour Schedule</h2>
                 </div>
                 
                 <table class="tour-table">
                     <thead>
                         <tr>
-                            <th>Data</th>
-                            <th>Cidade</th>
-                            <th>Local</th>
-                            <th>Ingressos</th>
+                            <th>Date</th>
+                            <th>City</th>
+                            <th>Venue</th>
+                            <th>Tickets</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="tour-date" data-label="Data">
+                            <td class="tour-date" data-label="Date">
                                 <time datetime="2023-07-16">16 JUL</time>
                             </td>
-                            <td class="tour-city" data-label="Cidade">DETROIT, MI</td>
-                            <td class="tour-venue" data-label="Local">DTE ENERGY MUSIC THEATRE</td>
-                            <td class="tour-btn" data-label="Ingressos">
-                                <button type="button" class="btn btn-primary" aria-label="Comprar ingressos para o show em Detroit">Comprar Ingressos</button>
+                            <td class="tour-city" data-label="City">DETROIT, MI</td>
+                            <td class="tour-venue" data-label="Venue">DTE ENERGY MUSIC THEATRE</td>
+                            <td class="tour-btn" data-label="Tickets">
+                                <button type="button" class="btn btn-primary" aria-label="Buy tickets for the show in Detroit">Buy Tickets</button>
                             </td>
                         </tr>
                         <tr>
-                            <td class="tour-date" data-label="Data">
+                            <td class="tour-date" data-label="Date">
                                 <time datetime="2023-07-19">19 JUL</time>
                             </td>
-                            <td class="tour-city" data-label="Cidade">TORONTO, ON</td>
-                            <td class="tour-venue" data-label="Local">BUDWEISER STAGE</td>
-                            <td class="tour-btn" data-label="Ingressos">
-                                <button type="button" class="btn btn-primary" aria-label="Comprar ingressos para o show em Toronto">Comprar Ingressos</button>
+                            <td class="tour-city" data-label="City">TORONTO, ON</td>
+                            <td class="tour-venue" data-label="Venue">BUDWEISER STAGE</td>
+                            <td class="tour-btn" data-label="Tickets">
+                                <button type="button" class="btn btn-primary" aria-label="Buy tickets for the show in Toronto">Buy Tickets</button>
                             </td>
                         </tr>
                         <tr>
-                            <td class="tour-date" data-label="Data">
+                            <td class="tour-date" data-label="Date">
                                 <time datetime="2023-07-22">22 JUL</time>
                             </td>
-                            <td class="tour-city" data-label="Cidade">BRISTOW, VA</td>
-                            <td class="tour-venue" data-label="Local">JIFFY LUBE LIVE</td>
-                            <td class="tour-btn" data-label="Ingressos">
-                                <button type="button" class="btn btn-primary" aria-label="Comprar ingressos para o show em Bristow">Comprar Ingressos</button>
+                            <td class="tour-city" data-label="City">BRISTOW, VA</td>
+                            <td class="tour-venue" data-label="Venue">JIFFY LUBE LIVE</td>
+                            <td class="tour-btn" data-label="Tickets">
+                                <button type="button" class="btn btn-primary" aria-label="Buy tickets for the show in Bristow">Buy Tickets</button>
                             </td>
                         </tr>
                         <tr>
-                            <td class="tour-date" data-label="Data">
+                            <td class="tour-date" data-label="Date">
                                 <time datetime="2023-07-29">29 JUL</time>
                             </td>
-                            <td class="tour-city" data-label="Cidade">PHOENIX, AZ</td>
-                            <td class="tour-venue" data-label="Local">AK-CHIN PAVILION</td>
-                            <td class="tour-btn" data-label="Ingressos">
-                                <button type="button" class="btn btn-primary" aria-label="Comprar ingressos para o show em Phoenix">Comprar Ingressos</button>
+                            <td class="tour-city" data-label="City">PHOENIX, AZ</td>
+                            <td class="tour-venue" data-label="Venue">AK-CHIN PAVILION</td>
+                            <td class="tour-btn" data-label="Tickets">
+                                <button type="button" class="btn btn-primary" aria-label="Buy tickets for the show in Phoenix">Buy Tickets</button>
                             </td>
                         </tr>
                         <tr>
-                            <td class="tour-date" data-label="Data">
-                                <time datetime="2023-08-02">02 AGO</time>
+                            <td class="tour-date" data-label="Date">
+                                <time datetime="2023-08-02">02 AUG</time>
                             </td>
-                            <td class="tour-city" data-label="Cidade">LAS VEGAS, NV</td>
-                            <td class="tour-venue" data-label="Local">T-MOBILE ARENA</td>
-                            <td class="tour-btn" data-label="Ingressos">
-                                <button type="button" class="btn btn-primary" aria-label="Comprar ingressos para o show em Las Vegas">Comprar Ingressos</button>
+                            <td class="tour-city" data-label="City">LAS VEGAS, NV</td>
+                            <td class="tour-venue" data-label="Venue">T-MOBILE ARENA</td>
+                            <td class="tour-btn" data-label="Tickets">
+                                <button type="button" class="btn btn-primary" aria-label="Buy tickets for the show in Las Vegas">Buy Tickets</button>
                             </td>
                         </tr>
                         <tr>
-                            <td class="tour-date" data-label="Data">
-                                <time datetime="2023-08-07">07 AGO</time>
+                            <td class="tour-date" data-label="Date">
+                                <time datetime="2023-08-07">07 AUG</time>
                             </td>
-                            <td class="tour-city" data-label="Cidade">CONCORD, CA</td>
-                            <td class="tour-venue" data-label="Local">CONCORD PAVILION</td>
-                            <td class="tour-btn" data-label="Ingressos">
-                                <button type="button" class="btn btn-primary" aria-label="Comprar ingressos para o show em Concord">Comprar Ingressos</button>
+                            <td class="tour-city" data-label="City">CONCORD, CA</td>
+                            <td class="tour-venue" data-label="Venue">CONCORD PAVILION</td>
+                            <td class="tour-btn" data-label="Tickets">
+                                <button type="button" class="btn btn-primary" aria-label="Buy tickets for the show in Concord">Buy Tickets</button>
                             </td>
                         </tr>
                     </tbody>
@@ -163,38 +176,66 @@
         <section class="section about-section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Sobre Nós</h2>
+                    <h2 class="section-title">About Us</h2>
                 </div>
                 
                 <div class="about-content">
                     <div class="about-image animate-on-scroll">
-                        <img src="img/Band Members.png" alt="Os quatro membros da banda The Generics posando juntos" width="600" height="400">
+                        <img src="img/Band Members.png" alt="The four members of The Generics band posing together" width="600" height="400" loading="lazy">
                     </div>
                     
                     <div class="about-text animate-on-scroll">
-                        <p>The Generics é uma banda de rock formada em 2015 que rapidamente conquistou fãs em todo o mundo com seu som único e performances energéticas.</p>
-                        <p>Nossa música combina elementos de rock clássico com influências modernas, criando um som que é ao mesmo tempo familiar e inovador.</p>
-                        <a href="about.html" class="btn btn-secondary">Conheça Nossa História</a>
+                        <p>The Generics is a rock band formed in 2015 that quickly gained fans worldwide with their unique sound and energetic performances.</p>
+                        <p>Our music combines elements of classic rock with modern influences, creating a sound that is both familiar and innovative.</p>
+                        <a href="about.html" class="btn btn-secondary">Learn Our Story</a>
                     </div>
                 </div>
             </div>
         </section>
         
         <!-- Music Preview Section -->
-        <section class="section section-dark">
+        <section id="music" class="section section-dark">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Nossa Música</h2>
+                    <h2 class="section-title">Our Music</h2>
                 </div>
                 
                 <div class="music-player">
                     <audio id="audio-player" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" preload="none"></audio>
-                    <button class="btn btn-play" aria-label="Reproduzir música">&#9658;</button>
-                    <p class="music-title">Ouça uma prévia do nosso novo single</p>
+                    <button class="btn btn-play" aria-label="Play music">&#9658;</button>
+                    <p class="music-title">Listen to a preview of our new single</p>
                 </div>
                 
                 <div class="music-cta">
-                    <a href="store.html" class="btn btn-secondary btn-lg">Comprar Nossos Álbuns</a>
+                    <a href="store.html" class="btn btn-secondary btn-lg">Buy Our Albums</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Gallery Preview Section -->
+        <section class="section gallery-preview-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Gallery</h2>
+                    <p class="section-subtitle">Check out photos and videos from our shows and backstage</p>
+                </div>
+                
+                <div class="gallery-preview">
+                    <div class="gallery-preview-items">
+                        <div class="gallery-preview-item">
+                            <img src="img/Album 1.png" alt="Live performance at our concert" loading="lazy">
+                        </div>
+                        <div class="gallery-preview-item">
+                            <img src="img/Album 2.png" alt="Band rehearsal" loading="lazy">
+                        </div>
+                        <div class="gallery-preview-item">
+                            <img src="img/Album 3.png" alt="Backstage at our last show" loading="lazy">
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-preview-cta">
+                        <a href="gallery.html" class="btn btn-secondary">View Full Gallery</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -206,46 +247,62 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <h3 class="footer-logo">The Generics</h3>
-                    <p class="footer-text">A melhor banda de rock da atualidade, com shows em todo o mundo e álbuns aclamados pela crítica.</p>
+                    <p class="footer-text">The best rock band of our time, with shows around the world and critically acclaimed albums.</p>
                     <div class="social-links">
-                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visite nosso canal no YouTube">
-                            <img src="img/Youtube Logo.png" alt="YouTube Logo">
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visit our YouTube channel">
+                            <img src="img/Youtube Logo.png" alt="YouTube Logo" loading="lazy">
                         </a>
-                        <a href="https://spotify.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Ouça nossas músicas no Spotify">
-                            <img src="img/Spotify Logo.png" alt="Spotify Logo">
+                        <a href="https://spotify.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Listen to our music on Spotify">
+                            <img src="img/Spotify Logo.png" alt="Spotify Logo" loading="lazy">
                         </a>
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Siga-nos no Facebook">
-                            <img src="img/Facebook Logo.png" alt="Facebook Logo">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow us on Facebook">
+                            <img src="img/Facebook Logo.png" alt="Facebook Logo" loading="lazy">
                         </a>
                     </div>
                 </div>
                 
                 <div class="footer-nav">
-                    <h4 class="footer-heading">Links Rápidos</h4>
+                    <h4 class="footer-heading">Quick Links</h4>
                     <ul class="footer-links">
                         <li class="footer-link"><a href="index.html">Home</a></li>
-                        <li class="footer-link"><a href="store.html">Loja</a></li>
-                        <li class="footer-link"><a href="about.html">Sobre</a></li>
+                        <li class="footer-link"><a href="store.html">Store</a></li>
+                        <li class="footer-link"><a href="about.html">About</a></li>
+                        <li class="footer-link"><a href="gallery.html">Gallery</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-contact">
-                    <h4 class="footer-heading">Contato</h4>
+                    <h4 class="footer-heading">Contact</h4>
                     <ul class="footer-links">
                         <li class="footer-link">Email: info@thegenerics.com</li>
-                        <li class="footer-link">Telefone: (11) 1234-5678</li>
-                        <li class="footer-link">Endereço: Av. Paulista, 1000 - São Paulo, SP</li>
+                        <li class="footer-link">Phone: +1 (555) 243-4678</li>
+                        <li class="footer-link">Address: 123 Music Ave, New York, NY</li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p class="copyright">&copy; 2023 The Generics. Todos os direitos reservados. Desenvolvido por Gustavo Henrique</p>
+                <p class="copyright">&copy; 2023 The Generics. All rights reserved. Developed by Gustavo Henrique</p>
             </div>
         </div>
     </footer>
     
     <!-- JavaScript -->
     <script src="js/modern-script.js"></script>
+    <script type="module" src="js/app.js"></script>
+    <script>
+        // Register service worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/js/service-worker.js')
+                    .then(registration => {
+                        console.log('Service Worker registered with scope:', registration.scope);
+                    })
+                    .catch(error => {
+                        console.error('Service Worker registration failed:', error);
+                    });
+            });
+        }
+    </script>
 </body>
 </html>
