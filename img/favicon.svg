@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fundo circular -->
+  <circle cx="16" cy="16" r="16" fill="#2e3192"/>
+  
+  <!-- Letra G estilizada -->
+  <path d="M16 6C10.48 6 6 10.48 6 16C6 21.52 10.48 26 16 26C19.84 26 23.09 23.8 24.64 20.5H16V16H26V16C26 10.48 21.52 6 16 6Z" fill="white"/>
+  
+  <!-- Nota musical -->
+  <path d="M20 10V18.5C20 19.88 18.88 21 17.5 21C16.12 21 15 19.88 15 18.5C15 17.12 16.12 16 17.5 16C17.86 16 18.19 16.07 18.5 16.21V13H20V10Z" fill="#e91e63"/>
+</svg>

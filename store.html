@@ -1,202 +1,244 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- link file css -->
-        <link rel="stylesheet" href="css/style.css"/>
-        <title>The Generics || Store</title>
-    </head>
-    <body>
-        <!-- header main starts -->
-        <header class="main-header">
-            <!-- nav main starts -->
-            <nav class="nav main-nav">
-                <ul>
-                    <li>
-                        <a href="index.html">
-                            Home
-                        </a> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Loja oficial da banda The Generics - Compre álbuns, camisetas e outros produtos">
+    <meta name="keywords" content="loja, banda, música, rock, álbuns, camisetas, the generics, produtos">
+    <meta name="author" content="Gustavo Henrique">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thegenerics.com/store.html">
+    <meta property="og:title" content="The Generics - Loja Oficial">
+    <meta property="og:description" content="Compre álbuns, camisetas e outros produtos da banda The Generics">
+    <meta property="og:image" content="img/Album 1.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://thegenerics.com/store.html">
+    <meta property="twitter:title" content="The Generics - Loja Oficial">
+    <meta property="twitter:description" content="Compre álbuns, camisetas e outros produtos da banda The Generics">
+    <meta property="twitter:image" content="img/Album 1.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/modern-style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="alternate icon" type="image/png" href="img/favicon.png">
+    
+    <title>The Generics - Banda de Rock | Loja Oficial</title>
+</head>
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+    
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">The Generics</a>
+            </div>
+            
+            <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Menu de navegação">
+                ☰
+            </button>
+            
+            <nav class="main-nav" id="main-nav" role="navigation" aria-label="Menu principal">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
                     </li>
-                    <li>
-                        <a href="store.html">
-                            Store
-                        </a>
+                    <li class="nav-item">
+                        <a href="store.html" class="nav-link" aria-current="page">Loja</a>
                     </li>
-                    <li>
-                        <a href="about.html">
-                            About
-                        </a>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Sobre</a>
                     </li>
                 </ul>
             </nav>
-            <!-- nav main ends -->
-            <h1 class="band-name band-name-large">The Generics</h1>
-        </header>
-        <!-- header main ends -->
-
-        <!-- section store Music starts -->
-        <section class="container content-section">
-            <h2 class="section-header">Music</h2>
-
-            <!-- shop items starts -->
-            <div class="shop-items">
-                <!-- single shop item  -->
-                <div class="shop-item">
-                    <span class="shop-item-title">Album 1</span>
-                    <img src="../img/Album 1.png" alt="Album 1" class="shop-item-image"/>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$12.99</span>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
-                </div>
-                <!-- single shop item  -->
-                <div class="shop-item">
-                    <span class="shop-item-title">Album 2</span>
-                    <img src="../img/Album 2.png" alt="Album 2" class="shop-item-image"/>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$12.99</span>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
-                </div>
-                <!-- single shop item  -->
-                <div class="shop-item">
-                    <span class="shop-item-title">Album 3</span>
-                    <img src="../img/Album 3.png" alt="Album 3" class="shop-item-image"/>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$12.99</span>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
-                </div>
-                <!-- single shop item  -->
-                <div class="shop-item">
-                    <span class="shop-item-title">Album 4</span>
-                    <img src="../img/Album 4.png" alt="Album 4" class="shop-item-image"/>
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$12.99</span>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Store Hero -->
+        <section class="section store-hero">
+            <div class="container">
+                <div class="section-header">
+                    <h1 class="section-title">Loja Oficial</h1>
+                    <p class="section-subtitle">Adquira nossos álbuns e produtos exclusivos</p>
                 </div>
             </div>
-            <!-- shop items ends -->
         </section>
-        <!-- section store Music ends -->
-
-        <!-- section store Merch starts -->        
-        <section class="container content-section">
-            <h2 class="section-header">Merch</h2>
-            <!-- shop items starts -->        
-            <div class="shop-items">
-                <!-- single shop item -->
-                <div class="shop-item">
-                    <span class="shop-item-title">T-Shirt</span>
-                    <img class="shop-item-image" src="../img/Shirt.png">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$19.99</span>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
+        
+        <!-- Store Section -->
+        <section class="section store-section">
+            <div class="container">
+                <div class="store-categories">
+                    <button class="category-btn active" data-category="all">Todos</button>
+                    <button class="category-btn" data-category="music">Música</button>
+                    <button class="category-btn" data-category="merch">Produtos</button>
                 </div>
-                <!-- single shop item -->
-                <div class="shop-item">
-                    <span class="shop-item-title">Coffee Cup</span>
-                    <img class="shop-item-image" src="../img/Cofee.png">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$6.99</span>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                
+                <div class="products-grid">
+                    <!-- Album 1 -->
+                    <div class="product-card" data-category="music">
+                        <img src="img/Album 1.png" alt="Capa do Album 1" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Album 1</h3>
+                            <p class="product-price">$12.99</p>
+                            <div class="product-actions">
+                                <button class="btn btn-primary add-to-cart-btn" aria-label="Adicionar Album 1 ao carrinho">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Album 2 -->
+                    <div class="product-card" data-category="music">
+                        <img src="img/Album 2.png" alt="Capa do Album 2" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Album 2</h3>
+                            <p class="product-price">$12.99</p>
+                            <div class="product-actions">
+                                <button class="btn btn-primary add-to-cart-btn" aria-label="Adicionar Album 2 ao carrinho">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Album 3 -->
+                    <div class="product-card" data-category="music">
+                        <img src="img/Album 3.png" alt="Capa do Album 3" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Album 3</h3>
+                            <p class="product-price">$12.99</p>
+                            <div class="product-actions">
+                                <button class="btn btn-primary add-to-cart-btn" aria-label="Adicionar Album 3 ao carrinho">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Album 4 -->
+                    <div class="product-card" data-category="music">
+                        <img src="img/Album 4.png" alt="Capa do Album 4" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Album 4</h3>
+                            <p class="product-price">$12.99</p>
+                            <div class="product-actions">
+                                <button class="btn btn-primary add-to-cart-btn" aria-label="Adicionar Album 4 ao carrinho">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- T-Shirt -->
+                    <div class="product-card" data-category="merch">
+                        <img src="img/Shirt.png" alt="Camiseta da banda" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Camiseta</h3>
+                            <p class="product-price">$19.99</p>
+                            <div class="product-actions">
+                                <button class="btn btn-primary add-to-cart-btn" aria-label="Adicionar Camiseta ao carrinho">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Coffee Cup -->
+                    <div class="product-card" data-category="merch">
+                        <img src="img/Cofee.png" alt="Caneca da banda" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Caneca</h3>
+                            <p class="product-price">$6.99</p>
+                            <div class="product-actions">
+                                <button class="btn btn-primary add-to-cart-btn" aria-label="Adicionar Caneca ao carrinho">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- shop items starts -->       
         </section>
-        <!-- section store Merch ends -->                
-
-        <!-- section Cart starts -->
-        <section class="container content-section">
-            <h2 class="section-header">Cart</h2>
-
-            <!-- cart row starts-->
-            <div class="cart-row">
-                <span class="cart-item cart-header cart-column">ITEM</span>
-                <span class="cart-price cart-header cart-column">PRICE</span>
-                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-            </div>
-            <!-- cart row ends-->
-
-            <!-- cart items starts -->
-            <div class="cart-items">
-                <!-- single cart row -->
-                <div class="cart-row">
-                    <!-- cart item -->
-                    <div class="cart-item cart-column">
-                        <img src="images/Shirt.png" alt="Shirt" width="100" height="100">
-                        <span class="cart-item-title">T-SHIRT</span>    
-                    </div>
-                    <!-- cart price -->
-                    <span class="cart-price cart-column">$119.99</span>
-                    <!-- cart quantity -->
-                    <div class="cart-quantity cart-column">
-                        <input class="cart-quantity-input" type="number" value="1"/>
-                        <button class="btn btn-danger" type="reset">Remove</button>
-                    </div>
+        
+        <!-- Cart Section -->
+        <section class="section cart-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Seu Carrinho</h2>
                 </div>
-                <!-- single cart row -->
-                <div class="cart-row">
-                    <div class="cart-item cart-column">
-                        <img src="images/Album 3.png" alt="Album 3" width="100" height="100">
-                        <span class="cart-item-title">Album 3</span>    
-                    </div>
-                    <span class="cart-price cart-column">$$9.99</span>
-                    <div class="cart-quantity cart-column">
-                        <input class="cart-quantity-input" type="number" value="1"/>
-                        <button class="btn btn-danger" type="reset">Remove</button>
-                    </div>
+                
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                        </tr>
+                    </thead>
+                    <tbody class="cart-items">
+                        <!-- Os itens do carrinho serão adicionados dinamicamente via JavaScript -->
+                    </tbody>
+                    <tfoot>
+                        <tr class="cart-total">
+                            <th colspan="2" class="cart-total-title">Total:</th>
+                            <td class="cart-total-price">$0.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                
+                <div class="purchase-container">
+                    <button class="btn btn-secondary btn-lg btn-purchase" aria-label="Finalizar compra">Finalizar Compra</button>
                 </div>
             </div>
-            <!-- cart items ends -->
-
-            <!-- cart total starts -->
-            <div class="cart-total">
-                <strong class="cart-total-title">Total</strong>
-                <span class="cart-total-price">$39.97</span>
-            </div>
-            <!-- cart total ends -->
-
-            <!-- button Purchase starts-->
-            <div>
-                <button class="btn btn-primary btn-purchase" type="button">Purchase</button>
-            </div>
-            <!-- button Purchase ends-->
         </section>
-        <!-- section Cart ends -->
-
-        <!-- main footer starts -->
-        <footer class="main-footer">
-            <!-- main container footer starts -->
-            <div class="main-container-footer">
-                <h3 class="band-name band-name-medium">The Generics</h3>
-                <!-- nav footer starts -->
-                <ul class="nav footer-nav">
-                    <li>
-                        <a href="https://youtube.com" target="_blank">
-                            <img src="../img/Youtube Logo.png"/>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">The Generics</h3>
+                    <p class="footer-text">A melhor banda de rock da atualidade, com shows em todo o mundo e álbuns aclamados pela crítica.</p>
+                    <div class="social-links">
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visite nosso canal no YouTube">
+                            <img src="img/Youtube Logo.png" alt="YouTube Logo">
                         </a>
-                    </li>
-                    <li>
-                        <a href="https://spotify.com" target="_blank">
-                            <img src="../img/Spotify Logo.png"/>
+                        <a href="https://spotify.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Ouça nossas músicas no Spotify">
+                            <img src="img/Spotify Logo.png" alt="Spotify Logo">
                         </a>
-                    </li>
-                    <li>
-                        <a href="https://facebook.com" target="_blank">
-                            <img src="../img/Facebook Logo.png"/>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Siga-nos no Facebook">
+                            <img src="img/Facebook Logo.png" alt="Facebook Logo">
                         </a>
-                    </li>
-                </ul>
-                <!-- nav footer ends -->
+                    </div>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4 class="footer-heading">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="index.html">Home</a></li>
+                        <li class="footer-link"><a href="store.html">Loja</a></li>
+                        <li class="footer-link"><a href="about.html">Sobre</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4 class="footer-heading">Contato</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link">Email: info@thegenerics.com</li>
+                        <li class="footer-link">Telefone: (11) 1234-5678</li>
+                        <li class="footer-link">Endereço: Av. Paulista, 1000 - São Paulo, SP</li>
+                    </ul>
+                </div>
             </div>
-            <!-- main container footer ends -->
-        </footer>
-        <!-- main footer starts -->
-    </body>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2023 The Generics. Todos os direitos reservados. Desenvolvido por Gustavo Henrique</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/modern-script.js"></script>
+</body>
 </html>
